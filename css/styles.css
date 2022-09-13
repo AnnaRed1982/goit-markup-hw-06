@@ -761,9 +761,12 @@ nav {
 label {
   display: flex;
   flex-direction: column;
+  gap: 4px;
+
+  position: relative;
 }
 .register-name {
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -772,8 +775,6 @@ label {
 }
 
 .register-input {
-  position: relative;
-
   height: 40px;
 
   border: 1px solid var(--formborder);
@@ -783,8 +784,8 @@ label {
 }
 .register-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 28px;
+  left: 12px;
 }
 .register-textarea {
   height: 120px;
