@@ -41,6 +41,11 @@
   --boxshadow1: rgba(0, 0, 0, 0.1);
   --boxshadow2: rgba(0, 0, 0, 0.08);
   --boxshadow3: rgba(0, 0, 0, 0.12);
+  --portfshadow2: rgba(0, 0, 0, 0.06);
+  --portfshadow3: rgba(0, 0, 0, 0.16);
+
+  /* border */
+  --footerborder: rgba(255, 255, 255, 0.3);
 
   /* lines */
   --portfborder: #eeeeee;
@@ -560,6 +565,43 @@ nav {
   display: block;
   fill: currentColor;
 }
+/* Footer Email */
+.footer-email {
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid var(--footerborder);
+
+  /* background-color: drop-shadow(0px 4px 4px var(--shadow)); */
+  
+  background-color: var(--darkgrey);
+  border-radius: var(--btnradius);
+
+  /* padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px; */
+
+  position: relative;
+}
+.footer-email::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--greytext-footer);
+
+  position: absolute;
+  top: 15px;
+  left: 16px;
+}
+.sign-groupe {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+/* .form-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+} */
 
 /* //////////////////////////// */
 /* PORTFOLIO */
@@ -615,8 +657,8 @@ nav {
 }
 .portf-link:hover,
 .portf-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px var(--boxshadow3), 0px 4px 4px var(--portfshadow2),
+    1px 4px 6px var(--portfshadow3);
 }
 
 .portf-card {
