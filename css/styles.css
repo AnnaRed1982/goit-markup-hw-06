@@ -18,15 +18,18 @@
   --accentblack: #212121;
   --greytext: #757575;
   --greytext-footer: rgba(255, 255, 255, 0.6);
+  --placeholder: rgba(117, 117, 117, 0.5);
 
   /* BACKGROUND */
   --darkgrey: #2f303a;
   --teamback: #f5f4fa;
   --overlaybg: #c4c4c4;
   --workbackgr: rgba(47, 48, 58, 0.8);
+
   /* Icons */
   --iconcolor: #afb1b8;
   --iconfootr: rgba(255, 255, 255, 0.1);
+
   /* Gradient */
   --gradhero: rgba(47, 48, 58, 0.4);
 
@@ -729,3 +732,20 @@ nav {
   display: block;
   fill: currentColor;
 }
+
+/* input[name="user-descr"]::placeholder {
+  color: red
+} */
+
+input::placeholder {
+  font-size: 12px;
+  line-height: calc(14px / 12px);
+  letter-spacing: 0.01em;
+
+  color: var(--placeholder);
+}
+textarea {
+  resize: none;
+  height: 120px;
+}
+.register-title {}
