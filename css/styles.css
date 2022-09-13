@@ -826,7 +826,7 @@ textarea::placeholder {
   color: var(--white);
   cursor: pointer;
 }
-.a {
+.form-footer {
   display: flex;
   gap: 30px;
   flex-direction: column;
