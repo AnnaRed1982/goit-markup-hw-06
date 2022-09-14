@@ -580,13 +580,12 @@ nav {
 
   border: 1px solid var(--footerborder);
 
-  /* filter: drop-shadow(0px 4px 4px var(--shadow)); */
-
   background-color: var(--darkgrey);
   border-radius: var(--btnradius);
   padding-left: 16px;
 
   position: relative;
+  outline: none;
 }
 .footer-email::placeholder {
   font-size: 16px;
@@ -597,7 +596,11 @@ nav {
   top: 15px;
   left: 16px;
 }
-
+.footer-email:focus {
+  filter: drop-shadow(0px 4px 4px var(--shadow));
+  outline: var(--blue);
+  border: 1px solid var(--blue);
+}
 .form-btn {
   position: relative;
 }
