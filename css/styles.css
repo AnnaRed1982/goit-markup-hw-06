@@ -565,7 +565,19 @@ nav {
   display: block;
   fill: currentColor;
 }
+
 /* Footer Email */
+.sign {
+  display: flex;
+  gap: 12px;
+}
+.sign-groupe {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+}
 .footer-email {
   width: 358px;
   height: 50px;
@@ -576,10 +588,7 @@ nav {
 
   background-color: var(--darkgrey);
   border-radius: var(--btnradius);
-
-  /* padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px; */
+  padding-left: 16px;
 
   position: relative;
 }
@@ -592,14 +601,7 @@ nav {
   top: 15px;
   left: 16px;
 }
-.sign-groupe {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
+
 .form-btn {
   position: relative;
 }
@@ -791,7 +793,14 @@ nav {
 .modal-icon {
   display: block;
   fill: currentColor;
+
+  transition: color var(--anim);
 }
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: var(--blue);
+}
+
 /* Modal input */
 
 /* input[name="user-descr"]::placeholder {
@@ -817,7 +826,7 @@ nav {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.register-item {
+.register-label {
   display: flex;
   gap: 4px;
   flex-direction: column;
@@ -826,17 +835,13 @@ nav {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
-  color: var(--greytext);
 }
-label {
-  position: relative;
-}
-.register-input {
-  height: 40px;
 
+.register-input {
+  position: relative;
+
+  height: 40px;
   padding-left: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
 
   border: 1px solid var(--formborder);
   border-radius: var(--btnradius);
@@ -844,19 +849,25 @@ label {
 
   width: 100%;
 }
-.register-input:focus {
-  border: 1px solid var(--blue);
-}
-.register-input:focus + .register-icon {
-  fill: var(--blue);
-}
 .register-icon {
+  display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
   fill: var(--accentblack);
 }
+.register-input:focus {
+  border: 1px solid var(--blue);
+}
+.register-input:focus + .register-icon {
+  fill: var(--blue);
+}
+/* .register-input:focus-within {
+  border: 1px solid var(--blue);
+  fill: var(--blue);
+} */
+
 .register-textarea {
   height: 120px;
   resize: none;
@@ -867,7 +878,7 @@ label {
   width: 100%;
   outline: none;
 }
-.register-textarea:focus{
+.register-textarea:focus {
   border: 1px solid var(--blue);
 }
 textarea::placeholder {
@@ -879,10 +890,23 @@ textarea::placeholder {
 }
 /* Checkbox */
 .label-checkbox {
+  cursor: pointer;
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  background-image: url(../img/icon.svg);
+}
+.checkbox:checked + .checkbox-icon {
+  background-image: url(../img/check.svg);
+}
+
 .checkbox-link {
   color: var(--blue);
 }
