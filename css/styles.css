@@ -573,7 +573,7 @@ nav {
   border: 1px solid var(--footerborder);
 
   /* background-color: drop-shadow(0px 4px 4px var(--shadow)); */
-  
+
   background-color: var(--darkgrey);
   border-radius: var(--btnradius);
 
@@ -596,12 +596,27 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 12px;
-}
-/* .form-btn {
   display: flex;
   flex-direction: row;
   gap: 10px;
-} */
+}
+.form-btn {
+  position: relative;
+}
+.sign-name {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 28px;
+}
+.sign-icon {
+  display: block;
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 148px;
+}
 
 /* //////////////////////////// */
 /* PORTFOLIO */
@@ -798,14 +813,19 @@ nav {
   color: var(--accentblack);
 }
 .register-group {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
   margin-bottom: 20px;
+}
+.register-item {
+position: relative;
 }
 label {
   display: flex;
   flex-direction: column;
   gap: 4px;
-
-  position: relative;
+  
 }
 .register-name {
   /* margin-bottom: 4px; */
@@ -819,15 +839,23 @@ label {
 .register-input {
   height: 40px;
 
+  padding-left: 42px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
   border: 1px solid var(--formborder);
   border-radius: var(--btnradius);
 
-  margin-bottom: 10px;
+  width: 100%;
+  /* margin-bottom: 10px; */
+  
 }
 .register-icon {
   position: absolute;
-  top: 28px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
+  fill: var(--accentblack);
 }
 .register-textarea {
   height: 120px;
