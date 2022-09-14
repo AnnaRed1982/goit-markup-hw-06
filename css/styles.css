@@ -568,15 +568,11 @@ nav {
 
 /* Footer Email */
 .sign {
-  display: flex;
-  gap: 12px;
+  padding-left: 23px;
 }
-.sign-groupe {
+.sign-item {
   display: flex;
-  flex-direction: row;
   gap: 12px;
-  text-align: center;
-  justify-content: center;
 }
 .footer-email {
   width: 358px;
@@ -584,7 +580,7 @@ nav {
 
   border: 1px solid var(--footerborder);
 
-  /* background-color: drop-shadow(0px 4px 4px var(--shadow)); */
+  /* filter: drop-shadow(0px 4px 4px var(--shadow)); */
 
   background-color: var(--darkgrey);
   border-radius: var(--btnradius);
@@ -810,6 +806,7 @@ nav {
 .register {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .register-title {
   font-weight: 700;
@@ -830,6 +827,7 @@ nav {
   display: flex;
   gap: 4px;
   flex-direction: column;
+  position: relative;
 }
 .register-name {
   font-size: 12px;
@@ -838,7 +836,7 @@ nav {
 }
 
 .register-input {
-  position: relative;
+  display: block;
 
   height: 40px;
   padding-left: 42px;
@@ -906,7 +904,6 @@ textarea::placeholder {
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
 }
-
 .checkbox-link {
   color: var(--blue);
 }
