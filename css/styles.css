@@ -792,6 +792,7 @@ nav {
   display: block;
   fill: currentColor;
 }
+/* Modal input */
 
 /* input[name="user-descr"]::placeholder {
   color: red
@@ -806,11 +807,9 @@ nav {
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.03em;
+  color: var(--accentblack);
 
   margin-bottom: 12px;
-
-  color: var(--accentblack);
 }
 .register-group {
   display: flex;
@@ -819,23 +818,19 @@ nav {
   margin-bottom: 20px;
 }
 .register-item {
-position: relative;
-}
-label {
   display: flex;
-  flex-direction: column;
   gap: 4px;
-  
+  flex-direction: column;
 }
 .register-name {
-  /* margin-bottom: 4px; */
-
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--greytext);
 }
-
+label {
+  position: relative;
+}
 .register-input {
   height: 40px;
 
@@ -845,10 +840,15 @@ label {
 
   border: 1px solid var(--formborder);
   border-radius: var(--btnradius);
+  outline: none;
 
   width: 100%;
-  /* margin-bottom: 10px; */
-  
+}
+.register-input:focus {
+  border: 1px solid var(--blue);
+}
+.register-input:focus + .register-icon {
+  fill: var(--blue);
 }
 .register-icon {
   position: absolute;
@@ -864,6 +864,11 @@ label {
 
   border: 1px solid var(--formborder);
   border-radius: var(--btnradius);
+  width: 100%;
+  outline: none;
+}
+.register-textarea:focus{
+  border: 1px solid var(--blue);
 }
 textarea::placeholder {
   font-size: 12px;
@@ -872,12 +877,11 @@ textarea::placeholder {
 
   color: var(--placeholder);
 }
+/* Checkbox */
 .label-checkbox {
   display: flex;
   flex-direction: row;
   gap: 10px;
-
-  /* margin-bottom: 30px; */
 }
 .checkbox-link {
   color: var(--blue);
