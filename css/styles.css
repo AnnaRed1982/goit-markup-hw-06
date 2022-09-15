@@ -922,11 +922,9 @@ textarea::placeholder {
   align-items: center;
   gap: 7px;
 }
-/* .checkbox:focus + .checkbox-icon {
-  outline: 1px solid var(--blue);
-  outline-offset: 1px;
-  border-radius: 2px;
-} */
+.checkbox {
+  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+}
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -935,6 +933,8 @@ textarea::placeholder {
   outline: transparent;
 
   background-image: url(../img/icon.svg);
+
+  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
@@ -944,6 +944,12 @@ textarea::placeholder {
 }
 .checkbox-link {
   color: var(--blue);
+  outline: transparent;
+}
+.checkbox:focus + .checkbox-icon {
+  outline: 1px solid var(--blue);
+  outline-offset: 1px;
+  border-radius: 2px;
 }
 
 .form-btn {
@@ -963,6 +969,8 @@ textarea::placeholder {
   letter-spacing: 0.06em;
   color: var(--white);
   cursor: pointer;
+
+  outline: transparent;
 
   transition: background-color var(--anim);
 }
