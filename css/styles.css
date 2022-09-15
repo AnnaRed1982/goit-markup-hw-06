@@ -922,9 +922,7 @@ textarea::placeholder {
   align-items: center;
   gap: 7px;
 }
-.checkbox {
-  /* transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim); */
-}
+
 .checkbox-icon {
   display: inline-block;
   width: 16px;
@@ -933,8 +931,6 @@ textarea::placeholder {
   outline: transparent;
 
   background-image: url(../img/icon.svg);
-
-  /* transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim); */
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
