@@ -947,6 +947,8 @@ textarea::placeholder {
   outline-offset: 1px;
   border-radius: 2px;
 } */
+/* .checkbox:focus + .checkbox-icon {
+} */
 
 .form-btn {
   font-family: inherit;
