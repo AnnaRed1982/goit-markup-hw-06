@@ -568,7 +568,7 @@ nav {
 
 /* Footer Email */
 .sign {
-  padding-left: 23px;
+  margin-left: auto;
 }
 .sign-item {
   display: flex;
@@ -586,8 +586,6 @@ nav {
 
   position: relative;
   outline: none;
-
-  cursor: pointer;
 
   font-size: 16px;
   line-height: calc(20 / 16);
@@ -770,8 +768,6 @@ nav {
   transform: translate(-50%, -50%);
 
   width: 528px;
-  height: 581px;
-
   padding: 40px;
 
   background-color: var(--white);
@@ -853,7 +849,9 @@ nav {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 }
-
+.register-item {
+  position: relative;
+}
 .register-input {
   height: 40px;
   padding-left: 42px;
@@ -863,8 +861,6 @@ nav {
   border-radius: var(--btnradius);
   outline: transparent;
 
-  cursor: pointer;
-
   width: 100%;
 
   transition: border var(--anim);
@@ -872,10 +868,10 @@ nav {
 }
 .register-icon {
   position: absolute;
-  /* top: 50%;
-  transform: translateY(-50%); */
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
-  bottom: 11px;
+
   fill: var(--accentblack);
 
   transition: fill var(--anim);
@@ -903,8 +899,6 @@ nav {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
 
-  cursor: pointer;
-
   transition: border var(--anim);
 }
 .register-textarea:hover,
@@ -926,15 +920,17 @@ textarea::placeholder {
   align-items: center;
   gap: 7px;
 }
-
+.checkbox {
+  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+}
 .checkbox-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
 
-  outline: transparent;
-
   background-image: url(../img/icon.svg);
+
+  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
@@ -944,13 +940,15 @@ textarea::placeholder {
 }
 .checkbox-link {
   color: var(--blue);
-  outline: transparent;
+
+  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
 }
-/* .checkbox:focus + .checkbox-icon {
+.checkbox:focus + .checkbox-icon,
+.checkbox-link:focus {
   outline: 1px solid var(--blue);
-  outline-offset: 1px;
+  outline-offset: 3px;
   border-radius: 2px;
-} */
+}
 /* .checkbox:focus + .checkbox-icon {
 } */
 
