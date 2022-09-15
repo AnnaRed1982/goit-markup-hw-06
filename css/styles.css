@@ -586,6 +586,8 @@ nav {
 
   position: relative;
   outline: none;
+
+  transition: filter var(--anim), outline var(--anim), border var(--anim);
 }
 .footer-email::placeholder {
   font-size: 16px;
@@ -596,6 +598,7 @@ nav {
   top: 15px;
   left: 16px;
 }
+.footer-email:hover,
 .footer-email:focus {
   filter: drop-shadow(0px 4px 4px var(--shadow));
   outline: var(--blue);
@@ -607,16 +610,20 @@ nav {
 .sign-name {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 28px;
+
+  transform: translateY(-50%);
+  transition: transform var(--anim);
 }
 .sign-icon {
   display: block;
   fill: currentColor;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 148px;
+
+  transform: translateY(-50%);
+  transition: transform var(--anim);
 }
 
 /* //////////////////////////// */
@@ -788,21 +795,19 @@ nav {
   background-color: var(--white);
   border-radius: 50%;
   border: 1px solid var(--boxshadow1);
+  outline: transparent;
+
+  transition: fill var(--anim);
 }
 .modal-icon {
   display: block;
-  fill: currentColor;
+  fill: var(--black);
 
-  outline: transparent;
-
-  transition: color var(--anim);
+  transition: fill var(--anim);
 }
-.modal-icon:hover {
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--blue);
-}
-
-.modal-icon:focus {
-  /* fill: var(--blue); */
 }
 
 /* Modal input */
@@ -853,6 +858,9 @@ nav {
   outline: transparent;
 
   width: 100%;
+
+  transition: border var(--anim);
+  transition: fill var(--anim);
 }
 .register-icon {
   position: absolute;
@@ -861,17 +869,17 @@ nav {
   left: 12px;
   bottom: 11px;
   fill: var(--accentblack);
+
+  transition: fill var(--anim);
 }
+.register-input:hover,
 .register-input:focus {
   border: 1px solid var(--blue);
 }
+.register-input:hover + .register-icon,
 .register-input:focus + .register-icon {
   fill: var(--blue);
 }
-/* .register-input:focus-within {
-  border: 1px solid var(--blue);
-  fill: var(--blue);
-} */
 
 .register-textarea {
   height: 120px;
@@ -886,7 +894,10 @@ nav {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+
+  transition: border var(--anim);
 }
+.register-textarea:hover,
 .register-textarea:focus {
   border: 1px solid var(--blue);
 }
