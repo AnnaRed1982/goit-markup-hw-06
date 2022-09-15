@@ -923,7 +923,7 @@ textarea::placeholder {
   gap: 7px;
 }
 .checkbox {
-  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+  /* transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim); */
 }
 .checkbox-icon {
   display: inline-block;
@@ -934,7 +934,7 @@ textarea::placeholder {
 
   background-image: url(../img/icon.svg);
 
-  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+  /* transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim); */
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
@@ -946,11 +946,11 @@ textarea::placeholder {
   color: var(--blue);
   outline: transparent;
 }
-.checkbox:focus + .checkbox-icon {
+/* .checkbox:focus + .checkbox-icon {
   outline: 1px solid var(--blue);
   outline-offset: 1px;
   border-radius: 2px;
-}
+} */
 
 .form-btn {
   font-family: inherit;
