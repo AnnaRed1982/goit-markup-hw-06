@@ -587,6 +587,8 @@ nav {
   position: relative;
   outline: none;
 
+  cursor: pointer;
+
   transition: filter var(--anim), outline var(--anim), border var(--anim);
 }
 .footer-email::placeholder {
@@ -857,6 +859,8 @@ nav {
   border-radius: var(--btnradius);
   outline: transparent;
 
+  cursor: pointer;
+
   width: 100%;
 
   transition: border var(--anim);
@@ -894,6 +898,8 @@ nav {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+
+  cursor: pointer;
 
   transition: border var(--anim);
 }
