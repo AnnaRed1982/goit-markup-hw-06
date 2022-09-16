@@ -948,10 +948,13 @@ textarea::placeholder {
 }
 /* ------------------- */
 
-.checkbox:focus:not(:hover) + .checkbox-icon {
+.checkbox:focus-visible:not(:hover) + .checkbox-icon {
   outline: 1px solid var(--blue);
   outline-offset: 3px;
   border-radius: 2px;
+}
+.checkbox:not(:checked) + .checkbox-icon {
+  outline: transparent;
 }
 
 .form-btn {
