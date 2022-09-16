@@ -943,15 +943,21 @@ textarea::placeholder {
 
   transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
 }
-.checkbox:focus + .checkbox-icon,
 .checkbox-link:focus {
+  outline-color: var(--blue);
+}
+/* .checkbox:focus + .checkbox-icon,
+  .checkbox-link:focus {
+  outline: 1px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 2px;
+} */
+
+.checkbox:focus + .checkbox-icon {
   outline: 1px solid var(--blue);
   outline-offset: 3px;
   border-radius: 2px;
 }
-
-/* .checkbox:focus + .checkbox-icon {
-} */
 
 .form-btn {
   font-family: inherit;
