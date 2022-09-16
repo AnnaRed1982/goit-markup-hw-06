@@ -946,21 +946,13 @@ textarea::placeholder {
 .checkbox-link:focus {
   outline-color: var(--blue);
 }
+/* ------------------- */
 
-.checkbox:focus:not(:checked) + .checkbox-icon {
+.checkbox:focus:not(:hover) + .checkbox-icon {
   outline: 1px solid var(--blue);
   outline-offset: 3px;
   border-radius: 2px;
 }
-.checkbox:not(:focus) + .checkbox-icon {
-  outline: transparent;
-}
-/* .checkbox:checked:not(:focus) + .checkbox-icon {
-  outline: none;
-}
-.checkbox:not(:checked):not(:focus) + .checkbox-icon {
-  outline: none;
-} */
 
 .form-btn {
   font-family: inherit;
