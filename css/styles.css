@@ -958,6 +958,11 @@ textarea::placeholder {
   outline-offset: 3px;
   border-radius: 2px;
 }
+/* .checkbox:focus:not(:checked) + .checkbox-icon {
+  outline: 1px solid var(--blue);
+  outline-offset: 3px;
+  border-radius: 2px;
+} */
 /* .checkbox:checked:not(:focus) + .checkbox-icon {
   outline: none;
 }
