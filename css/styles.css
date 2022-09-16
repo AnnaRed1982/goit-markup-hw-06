@@ -930,7 +930,7 @@ textarea::placeholder {
 
   background-image: url(../img/icon.svg);
 
-  transition: outline var(--anim), outline-offset var(--anim), border-radius var(--anim);
+  transition: outline-color var(--anim);
 }
 .checkbox:checked + .checkbox-icon {
   background-image: url(../img/check.svg);
